@@ -9,15 +9,15 @@
 </head>
 <body>
   <div class="container">
-    <header class="header">
-      <div class="header__logo">
+    <header class="header grid justify-between">
+      <div class="header__logo col-2">
         <picture>
           <source media="(min-width: 64em)" srcset="assets/images/logo-large.svg">
           <img src="assets/images/logo-small.svg" alt="KP Logo">
         </picture>
       </div>
-      <div class="header__cta">
-        <form action="search" method="post" class="form__search">
+      <div class="header__cta inline-flex col-content">
+        <form action="search" method="post" class="form__search grid align-middle">
           <input type="text" name="search" id="search" placeholder="What do you want to learn?">
           <button type="submit" class="btn--submit"><img src="assets/images/search.svg" alt="magnifying glass"></button>
         </form>
