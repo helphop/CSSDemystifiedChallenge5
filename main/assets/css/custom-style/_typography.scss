@@ -61,7 +61,10 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: var(--text-xxxxl);
+  font-weight: 300;
+  padding: var(--space-sm) 0;
 }
+
 
 h2 {
   font-size: 3.375rem;

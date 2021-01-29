@@ -17,3 +17,9 @@
     background: none;
   }
 }
+
+.hero {
+  &__img {
+    border-radius: var(--radius-xl);
+  }
+}
