@@ -55,6 +55,7 @@
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 ;
@@ -63,3 +64,18 @@ img {
 // (END) Global editor code
 
 // --------------------------------
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+
+}
+
+.container > * {
+  background-color: var(--bg, var(--clr-neutral-100));
+  color: var(--fg, var(--clr-secondary-200));
+  font-family: var(--ff-primary);
+  font-size: var(--text-unit);
+  line-height: 1.87;
+ padding: var(--space-md);
+}

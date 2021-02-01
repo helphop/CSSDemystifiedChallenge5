@@ -1,5 +1,4 @@
 .header {
-  padding: var(--space-md) 0 var(--space-md) 0;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
@@ -38,29 +37,50 @@
 }
 
 .nav {
-     overflow-x: auto;
-     .container {
-       margin-right: 0;
-     }
-     .container:after {
-       content: " ";
-       display: block;
-       border-top: 2px solid skyblue;
-       border-bottom: 2px solid skyblue;
-      border-radius: 2px;
-      margin-top: var(--space-md);
-     }
-  a {
-    color: inherit;
-  }
+  padding-right: 0;
+  overflow-x: auto;
+  //to hide scroll bars on firefox
+  scrollbar-width: none;
+  display: grid;
+  grid-auto-flow: column;
+
+
+  &::-webkit-scrollbar {display: none; }
+  a {color: inherit;}
   &__list {
     white-space: nowrap;
-    margin-right: var(--space-sm);
+    &:after {
+      content: " ";
+      display: block;
+      border-top: 2px solid var(--color-white-dark);
+      border-bottom: 2px solid var(--color-white-dark);
+      border-radius: 2px;
+      margin-top: var(--space-sm);
+    }
     li {
       display: inline-block;
+      position: relative;
+    }
+    li.current:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      display: block;
+      border-top: 2px solid var(--color-black);
+      border-bottom: 2px solid var(--color-black);
+     border-radius: 2px;
+     margin-top: var(--space-sm);
     }
     > li:not(:first-of-type) {
       margin-left: var(--space-sm);
     }
+    > li:last-of-type {
+      margin-left: auto;
+    }
+
+
+
   }
+
+
 }
