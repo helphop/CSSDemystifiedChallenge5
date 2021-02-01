@@ -37,29 +37,37 @@
 }
 
 .nav {
-  padding-right: 0;
   overflow-x: auto;
-  //to hide scroll bars on firefox
-  scrollbar-width: none;
   display: grid;
   grid-auto-flow: column;
+  scrollbar-width: none;
 
-
+   //to hide scroll bars
   &::-webkit-scrollbar {display: none; }
   a {color: inherit;}
+
   &__list {
     white-space: nowrap;
+    display: flex; //enables the use of margin-left: auto on flex items
+    position: relative;
+    gap: var(--space-md);
+
     &:after {
-      content: " ";
+      content: "";
+      position: absolute;
       display: block;
       border-top: 2px solid var(--color-white-dark);
       border-bottom: 2px solid var(--color-white-dark);
       border-radius: 2px;
-      margin-top: var(--space-sm);
+      width: 100%;
+      bottom: 0;
     }
     li {
       display: inline-block;
       position: relative;
+      padding-bottom: var(--space-md);
+      color: var(--color-black-light);
+      &.current {color: var(--color-black);}
     }
     li.current:after {
       content: "";
@@ -69,18 +77,11 @@
       border-top: 2px solid var(--color-black);
       border-bottom: 2px solid var(--color-black);
      border-radius: 2px;
-     margin-top: var(--space-sm);
+      bottom: 0;
+      z-index: 100;
     }
-    > li:not(:first-of-type) {
-      margin-left: var(--space-sm);
-    }
-    > li:last-of-type {
+    li:last-of-type {
       margin-left: auto;
     }
-
-
-
   }
-
-
 }
