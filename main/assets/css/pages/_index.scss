@@ -1,12 +1,24 @@
 .header {
   padding: var(--space-md) 0 var(--space-md) 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
   &__cta {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    align-content: center;
     > a:first-of-type {
       display: none;
     }
   }
+  .form__search {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+  }
 }
-
 
 .form__search {
   input {
@@ -21,5 +33,34 @@
 .hero {
   &__img {
     border-radius: var(--radius-xl);
+  }
+  padding-bottom: var(--space-lg);
+}
+
+.nav {
+     overflow-x: auto;
+     .container {
+       margin-right: 0;
+     }
+     .container:after {
+       content: " ";
+       display: block;
+       border-top: 2px solid skyblue;
+       border-bottom: 2px solid skyblue;
+      border-radius: 2px;
+      margin-top: var(--space-md);
+     }
+  a {
+    color: inherit;
+  }
+  &__list {
+    white-space: nowrap;
+    margin-right: var(--space-sm);
+    li {
+      display: inline-block;
+    }
+    > li:not(:first-of-type) {
+      margin-left: var(--space-sm);
+    }
   }
 }

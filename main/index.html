@@ -9,15 +9,15 @@
 </head>
 <body>
   <div class="container">
-    <header class="header grid justify-between">
-      <div class="header__logo col-2">
+    <header class="header">
+      <div class="header__logo">
         <picture>
           <source media="(min-width: 64em)" srcset="assets/images/logo-large.svg">
           <img src="assets/images/logo-small.svg" alt="KP Logo">
         </picture>
       </div>
-      <div class="header__cta inline-flex col-content">
-        <form action="search" method="post" class="form__search grid align-middle">
+      <div class="header__cta">
+        <form action="search" method="post" class="form__search">
           <input type="text" name="search" id="search" placeholder="What do you want to learn?">
           <button type="submit" class="btn--submit"><img src="assets/images/search.svg" alt="magnifying glass"></button>
         </form>
@@ -35,15 +35,20 @@
   </div>
 
   <nav class="nav">
-    <ul class="nav__list">
-      <li class="current"><a href="all_courses">All Courses</a></li>
-      <li><a href="beginner.html">Beginner</a></li>
-      <li><a href="intermediate.html">Intermediate</a></li>
-      <li><a href="expert.html">Expert</a></li>
-      <li><a href="grandmother.html">Grandmother</a></li>
-    </ul>
-    <a href="subscribe">Subscribe</a>
+    <div class="container">
+      <div class="content-wrapper flex justify-between">
+        <ul class="nav__list">
+          <li class="current"><a href="all_courses">All Courses</a></li>
+          <li><a href="beginner.html">Beginner</a></li>
+          <li><a href="intermediate.html">Intermediate</a></li>
+          <li><a href="expert.html">Expert</a></li>
+          <li><a href="grandmother.html">Grandmother</a></li>
+        </ul>
+        <a href="subscribe">Subscribe</a>
+      </div>
+    </div>
   </nav>
+
   <section class="courses">
     <div class="cards">
       <div class="card">
