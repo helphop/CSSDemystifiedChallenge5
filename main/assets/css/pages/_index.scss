@@ -49,6 +49,7 @@
   a {color: inherit;}
   &__list {
     white-space: nowrap;
+    display: flex;
     &:after {
       content: " ";
       display: block;
