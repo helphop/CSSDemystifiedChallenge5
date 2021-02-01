@@ -31,9 +31,11 @@
 
 .hero {
   &__img {
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-xxxl);
+    height: 88vw;
+    object-fit: cover;
+    object-position: right center;
   }
-  padding-bottom: var(--space-lg);
 }
 
 .nav {
