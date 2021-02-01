@@ -21,3 +21,29 @@
 .text--thin {
   font-weight: 300;
 }
+
+
+
+.flow-content > * + * {
+  margin-top: var(--space-unit-rem);
+}
+
+.flow-content-xsmall > * + * {
+  margin-top: calc(0.5 * var(--space-unit-rem));
+}
+
+.flow-content-small > * + * {
+  margin-top: calc(0.75 * var(--space-unit-rem));
+}
+
+.flow-content-md > * + * {
+    margin-top: calc(1.25 * var(--space-unit-rem));
+}
+
+.flow-content-large > * + * {
+  margin-top: calc(2 * var(--space-unit-rem));
+}
+
+.flow-content-xlarge > * + * {
+  margin-top: calc(3.25 * var(--space-unit-rem));;
+}
