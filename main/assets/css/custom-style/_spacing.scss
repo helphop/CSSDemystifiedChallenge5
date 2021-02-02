@@ -5,12 +5,12 @@
 // --------------------------------
 
 // 👇 uncomment to modify default spacing scale
-// :root {
-//   --space-unit:  1em;
-// }
+:root {
+  --space-unit-rem:  1rem;
+}
 
 // :root, * {
-//   --space-xxxxs: calc(0.125 * var(--space-unit)); 
+//   --space-xxxxs: calc(0.125 * var(--space-unit));
 //   --space-xxxs:  calc(0.25 * var(--space-unit));
 //   --space-xxs:   calc(0.375 * var(--space-unit));
 //   --space-xs:    calc(0.5 * var(--space-unit));

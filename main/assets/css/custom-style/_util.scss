@@ -55,11 +55,18 @@
 }
 
 .aspect-ratio > * {
-
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.radius-xl { border-radius: var(--radius-xl); }
+.radius-xxl { border-radius: var(--radius-xxl); }
+.radius-xxxl { border-radius: var(--radius-xxxl); }
+
+.bg-darker {
+  --bg: var(--color-white-dark);
 }
