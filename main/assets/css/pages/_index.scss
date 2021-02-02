@@ -3,6 +3,7 @@
   grid-auto-flow: column;
   justify-content: space-between;
   align-items: center;
+
   &__cta {
     display: grid;
     grid-auto-flow: column;
@@ -16,27 +17,35 @@
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+    input {
+      display: none;
+    }
+    .btn--submit {
+      border: none;
+      background: none;
+    }
   }
 }
 
-.form__search {
-  input {
-    display: none;
-  }
-  .btn--submit {
-    border: none;
-    background: none;
-  }
-}
+
+
 
 .hero {
+  .aspect-ratio {
+    --aspect-ratio: 1;
+    @include breakpoint(md) {
+      --aspect-ratio: 5/4;
+    }
+    @include breakpoint(lg) {
+      --aspect-ratio: 2.33;
+    }
+  }
   &__img {
     border-radius: var(--radius-xxxl);
-    height: 88vw;
-    object-fit: cover;
-    object-position: right center;
+     object-position: right center;
   }
 }
+
 
 .nav {
   overflow-x: auto;

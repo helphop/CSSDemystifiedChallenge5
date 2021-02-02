@@ -25,6 +25,7 @@
   //               0 7.3px 10.6px -6px rgba(0, 0, 0, 0.07),
   //               0 16.2px 21.9px -6px rgba(0, 0, 0, 0.117),
   //               0 46px 60px -6px rgba(0, 0, 0, 0.2);
+
 }
 
 // --------------------------------
@@ -79,4 +80,10 @@ img {
   font-size: var(--text-unit);
   line-height: 1.87;
  padding: var(--space-md);
+  @include breakpoint(md) {
+    padding: var(--space-md) var(--space-lg);
+  }
 }
+
+
+
