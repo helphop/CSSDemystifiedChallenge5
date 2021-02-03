@@ -52,6 +52,12 @@
 
 body {
   font-family: var(--font-secondary);
+  font-size: var(--text-base-size);
+  line-height: 1.87;
+}
+
+p {
+  letter-spacing: 0.02em;
 }
 
 h1, h2, h3, h4 {
@@ -72,6 +78,7 @@ h2 {
 
 h3 {
   font-size: 2.125rem;
+  letter-spacing: -0.04em;
 }
 
 // font family

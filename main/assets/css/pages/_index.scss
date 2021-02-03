@@ -147,19 +147,42 @@
 }
 
 .community {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 25rem));
-  justify-content: space-between;
-  gap: 2rem;
-  > :last-child{
-    grid-column: 1;
-    grid-row: 1;
+  grid-template-columns: 24rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  @include breakpoint(md) {
+     grid-auto-flow: column;
+    justify-content: space-between;
+    > :last-child {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+  @include breakpoint(lg) {
+    justify-content: space-around;
   }
 
-  .aspect-ratio {
-    --aspect-ratio: 1/1;
-  }
   &__img {
-    border-radius: var(--radius-xxl);
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  &__links {
+    display: grid;
+    justify-items: start;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    > a {
+      font-size: var(--text-md);
+    }
+    @include breakpoint(md) {
+      grid-auto-flow: column;
+    }
   }
 }
