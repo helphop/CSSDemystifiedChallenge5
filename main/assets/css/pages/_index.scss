@@ -189,9 +189,12 @@
 }
 
 .instructor {
-  padding-top: var(--space-xxl);
-  padding-bottom: var(--space-xxl);
+  &__wrapper {
+    border-bottom: 4px solid var(--color-white-dark);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
   display: grid;
+  gap: 1rem;
   align-items: center;
   .aspect-ratio {
     --aspect-ratio: 1;
@@ -202,8 +205,9 @@
     .aspect-ratio {
       --aspect-ratio: 0.8525;
     }
-    &__content {
+    .instructor__content {
       max-width: 340px;
     }
   }
+}
 }
