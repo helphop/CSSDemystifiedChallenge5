@@ -187,3 +187,24 @@
     }
   }
 }
+
+.instructor {
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
+  display: grid;
+  align-items: center;
+  .aspect-ratio {
+    --aspect-ratio: 1;
+  }
+  @include breakpoint(md) {
+    grid-template-columns: .75fr 1fr;
+    column-gap: 120px;
+    .aspect-ratio {
+      --aspect-ratio: 0.8525;
+        // min-width: 341px;
+    }
+    &__content {
+      max-width: 340px;
+    }
+  }
+}
