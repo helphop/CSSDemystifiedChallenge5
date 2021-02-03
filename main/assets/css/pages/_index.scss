@@ -149,23 +149,24 @@
 .community {
   padding-top: var(--space-xl);
   padding-bottom: var(--space-xl);
-  display: grid;
-  grid-template-columns: 24rem;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  @include breakpoint(md) {
-     grid-auto-flow: column;
-    justify-content: space-between;
-    > :last-child {
-      grid-column: 1;
-      grid-row: 1;
+  &__wrapper {
+    margin: 0 auto;
+    max-width: calc(1024px - (2 * var(--space-xl)) );
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(auto, 24rem);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    @include breakpoint(md) {
+      grid-auto-flow: column;
+      justify-content: space-between;
+      > :last-child {
+        grid-column: 1;
+        grid-row: 1;
+      }
     }
-  }
-  @include breakpoint(lg) {
-    justify-content: space-around;
-  }
-
+   }
   &__img {
     width: 20rem;
     height: 20rem;

@@ -77,7 +77,6 @@ img {
 .container > * {
   background-color: var(--bg, var(--clr-neutral-100));
   color: var(--fg, var(--clr-secondary-200));
-
  padding: var(--space-md);
   @include breakpoint(md) {
     padding: var(--space-md) var(--space-xl);
