@@ -215,12 +215,12 @@
 
 .footer  {
   display: grid;
-  gap: var(--space-xl);
+  row-gap: var(--space-xl);
+  column-gap: var(--space-lg);
   align-items: center;
   @include breakpoint(md) {
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 0.25fr 1fr auto;
   }
-
 
   &__list {
     justify-self: start;
