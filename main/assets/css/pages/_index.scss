@@ -1,28 +1,39 @@
 .header {
   display: grid;
-  grid-auto-flow: column;
-  justify-content: space-between;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--space-sm);
   align-items: center;
 
-  &__cta {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    align-content: center;
-    > a:first-of-type {
-      display: none;
-    }
-  }
   .form__search {
+    font-family: var(--font-primary);
+    padding: var(--space-xxs) var(--space-xxs) var(--space-xxs) var(--space-unit);
+    border-radius: var(--radius-xxl);
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    input {
-      display: none;
+    input { display: none;}
+    .btn--submit {justify-self: end;}
+  }
+
+  &__links > :first-child {
+    display: none;
+    margin-right: var(--space-xs);
+  }
+
+  @include breakpoint(md) {
+    .header__cta a:first-of-type {display: inline-block; }
+    .form__search {
+      min-width: 480px;
+      justify-self: end;
+      background: var(--color-white-dark);
+      input {display: block;}
     }
-    .btn--submit {
-      border: none;
-      background: none;
+    .header__links > :first-child { display: inline-block;}
+  }
+
+  @include breakpoint(lg) {
+    .form__search {
+      justify-self: center;
     }
   }
 }

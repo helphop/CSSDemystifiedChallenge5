@@ -150,3 +150,8 @@ mark {
     font-size: 0.94em;
   }
 }
+
+::placeholder {
+  font-weight: 300;
+  color: var(--color-black-lighter);
+}
