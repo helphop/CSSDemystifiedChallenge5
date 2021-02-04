@@ -86,7 +86,7 @@
   // --------------------------------
 
   .block { display: block; }
-  .inline-block { display: inline-block; }
+  .inline-block { display: inline-block !important; }
   .inline { display: inline; }
 
   // --------------------------------
@@ -1207,7 +1207,7 @@
 
       // display
       .block\@#{$breakpoint} { display: block !important; }
-      .inline-block\@#{$breakpoint} { display: inline-block; }
+      .inline-block\@#{$breakpoint} { display: inline-block !important; }
       .inline\@#{$breakpoint} { display: inline; }
 
       // margin

@@ -1,43 +1,27 @@
 .header {
-    position: sticky;
-    top: 0;
-    z-index: var(--zindex-fixed-element);
+  position: sticky;
+  top: 0;
+  z-index: var(--zindex-fixed-element);
+
   .container {
     box-shadow: 0px 20px 16px -10px rgba(0,0,0,0.05);
-    padding: var(--space-xs) 0;
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: var(--space-sm);
     align-items: center;
   }
 
-  .form__search {
-    font-family: var(--font-primary);
-    padding: var(--space-xxs);
+  form {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    input { display: none;}
-  }
-
-  &__links > :first-child {
-    display: none;
-  }
-
-  @include breakpoint(md) {
-
-    .form__search {
-       background-color: var(--color-white-dark);
-      min-width: 480px;
+    @include breakpoint(md) {
+      background-color: var(--color-white-dark);
+      min-width: 30rem;
       justify-self: end;
-      input {
-        display: block;
-      }
     }
-    .header__links > :first-child { display: inline-block;}
+    @include breakpoint(lg) { justify-self: center; }
   }
-
-  @include breakpoint(lg) {.form__search {justify-self: center;}}
 }
 
 .hero {
