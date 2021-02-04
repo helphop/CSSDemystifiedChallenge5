@@ -1,19 +1,19 @@
 .header {
-  padding-top: var(--space-sm);
-  padding-bottom: var(--space-sm);
-  position: sticky;
-  box-shadow: 0px 20px 16px -10px rgba(0,0,0,0.05);
-  overflow-x: hidden;
-  z-index: var(--zindex-fixed-element);
-  top: 0;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: var(--space-sm);
-  align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: var(--zindex-fixed-element);
+  .container {
+    box-shadow: 0px 20px 16px -10px rgba(0,0,0,0.05);
+    padding: var(--space-xs) 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: var(--space-sm);
+    align-items: center;
+  }
 
   .form__search {
     font-family: var(--font-primary);
-    padding: var(--space-xxs) var(--space-xxs) var(--space-xxs) var(--space-unit);
+    padding: var(--space-xxs);
     border-radius: var(--radius-xxl);
     display: grid;
     grid-auto-flow: column;
@@ -33,7 +33,10 @@
       min-width: 480px;
       justify-self: end;
       background: var(--color-white-dark);
-      input {display: block;}
+      input {
+        display: block;
+        padding-left: var(--space-sm)
+      };
     }
     .header__links > :first-child { display: inline-block;}
   }
