@@ -12,13 +12,11 @@
   }
 
   form {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
+    justify-self: end;
+    font-family: var(--font-primary);
     @include breakpoint(md) {
       background-color: var(--color-white-dark);
       min-width: 30rem;
-      justify-self: end;
     }
     @include breakpoint(lg) { justify-self: center; }
   }
