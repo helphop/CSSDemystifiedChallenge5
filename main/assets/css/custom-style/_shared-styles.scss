@@ -76,11 +76,11 @@ li a {color: inherit;}
 }
 
 .container > * {
-  background-color: var(--bg, var(--clr-neutral-100));
+  background-color: var(--bg, var(--color-white));
   color: var(--fg, var(--clr-secondary-200));
  padding: var(--space-md);
   @include breakpoint(md) {
-    padding: var(--space-md) var(--space-xl);
+    padding: var(--space-sm) var(--space-xl);
   }
 }
 
