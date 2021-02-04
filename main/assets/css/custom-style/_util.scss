@@ -57,3 +57,9 @@
 .bg-darker {
   --bg: var(--color-white-dark);
 }
+
+.bg-white-dark {
+  background-color: var(--color-white-dark);
+}
+
+.justify-self-end { justify-self: end;}

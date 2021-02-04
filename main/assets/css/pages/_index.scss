@@ -14,27 +14,24 @@
   .form__search {
     font-family: var(--font-primary);
     padding: var(--space-xxs);
-    border-radius: var(--radius-xxl);
     display: grid;
     grid-auto-flow: column;
     align-items: center;
     input { display: none;}
-    .btn--submit {justify-self: end;}
   }
 
   &__links > :first-child {
     display: none;
-    margin-right: var(--space-xs);
   }
 
   @include breakpoint(md) {
+
     .form__search {
+       background-color: var(--color-white-dark);
       min-width: 480px;
       justify-self: end;
-      background: var(--color-white-dark);
       input {
         display: block;
-        padding-left: var(--space-sm);
       }
     }
     .header__links > :first-child { display: inline-block;}
