@@ -78,5 +78,12 @@ body > * {
   border-radius: var(--radius-xxxl);
 }
 
+.container {
+  max-width: var(--max-width-lg);
+  @include breakpoint(md) {
+    --component-padding: var(--space-xl);
+  }
+}
+
 
 
