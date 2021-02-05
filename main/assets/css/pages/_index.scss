@@ -67,17 +67,15 @@
   .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-    gap: var(--space-lg);
+    gap: var(--space-xl);
   }
   .card {
     background: var(--color-white-dark);
     border-radius: var(--radius-xxxl);
     padding: var(--space-md);
     display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr minmax(17rem, 3fr) 1fr;
     font-family: var(--font-primary);
-    min-height: 27.5rem;
-
     &__header {
       display: flex;
       justify-content: space-between;
@@ -99,9 +97,7 @@
 
     .card__body {
       align-self: end;
-      > * + *  {
-        margin-top: var(--space-md);
-      }
+      > * + *  { margin-top: var(--space-md);}
     }
 
     .card__footer {
