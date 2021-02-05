@@ -109,17 +109,12 @@
 }
 
 .community {
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-xl);
-  &__wrapper {
-    margin: 0 auto;
-    max-width: calc(1024px - (2 * var(--space-xl)) );
+  .container {
     display: grid;
-    gap: 1rem;
+    gap: var(--space-md);
     grid-template-columns: minmax(auto, 24rem);
     justify-content: center;
-    justify-items: center;
-    align-items: center;
+    place-items: center;
     @include breakpoint(md) {
       grid-auto-flow: column;
       justify-content: space-between;
