@@ -35,11 +35,13 @@
 
 
 .nav {
-  padding-top: var(--space-xxl);
-  overflow-x: auto;
+  .container {
+      overflow-x: auto;
   display: grid;
   grid-auto-flow: column;
   scrollbar-width: none;
+  }
+
 
    //to hide scroll bars
   &::-webkit-scrollbar {display: none; }
