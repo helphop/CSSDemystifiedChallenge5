@@ -36,53 +36,29 @@
 
 .nav {
   .container {
-      overflow-x: auto;
-  display: grid;
-  grid-auto-flow: column;
-  scrollbar-width: none;
+   display: grid;
+    grid-auto-flow: column;
+    scrollbar-width: none;
+   overflow-x: auto;
   }
-
-
-   //to hide scroll bars
-  &::-webkit-scrollbar {display: none; }
-  a {color: inherit;}
+  &::-webkit-scrollbar {display: none; } //to hide scroll bars
 
   &__list {
-    white-space: nowrap;
-    display: flex; //enables the use of margin-left: auto on flex items
     position: relative;
-    gap: var(--space-md);
-
-    &:after {
-      content: "";
-      position: absolute;
-      display: block;
-      border-top: 2px solid var(--color-white-dark);
-      border-bottom: 2px solid var(--color-white-dark);
-      border-radius: 2px;
-      width: 100%;
-      bottom: 0;
-    }
+    --border: 2px;
     li {
       display: inline-block;
       position: relative;
       padding-bottom: var(--space-md);
       color: var(--color-black-light);
-      &.current {color: var(--color-black);}
+      &.current {
+        color: inherit;
+        font-weight: 500;
+      }
     }
-    li.current:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      display: block;
-      border-top: 2px solid var(--color-black);
-      border-bottom: 2px solid var(--color-black);
-     border-radius: 2px;
-      bottom: 0;
+    li.current.grayline-bottom::after {
+    --line-color: var(--color-black);
       z-index:  var(--zindex-header);
-    }
-    li:last-of-type {
-      margin-left: auto;
     }
   }
 }

@@ -63,3 +63,17 @@
 }
 
 .justify-self-end { justify-self: end;}
+
+.grayline-bottom {
+    &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    --default-border: 2px;
+    border-top: var(--border, var(--default-border)) solid var(--line-color, var(--color-white-dark));
+    border-bottom: var(--border, var(--default-border)) solid var(--line-color, var(--color-white-dark));
+    border-radius: var(--border, var(--default-border));
+    width: 100%;
+    bottom: 0;
+  }
+}
