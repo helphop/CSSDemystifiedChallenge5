@@ -172,7 +172,7 @@
   .margin-left-xxl   { margin-left: var(--space-xxl); }
   .margin-left-xxxl  { margin-left: var(--space-xxxl); }
   .margin-left-xxxxl { margin-left: var(--space-xxxxl); }
-  .margin-left-auto  { margin-left: auto; }
+  .margin-left-auto  { margin-left: auto !important; }
   .margin-left-0     { margin-left: 0; }
 
   .margin-x-xxxxs { margin-left: var(--space-xxxxs); margin-right: var(--space-xxxxs); }
@@ -1279,7 +1279,7 @@
         .margin-left-xxl\@#{$breakpoint}   { margin-left: var(--space-xxl); }
         .margin-left-xxxl\@#{$breakpoint}  { margin-left: var(--space-xxxl); }
         .margin-left-xxxxl\@#{$breakpoint} { margin-left: var(--space-xxxxl); }
-        .margin-left-auto\@#{$breakpoint}  { margin-left: auto; }
+        .margin-left-auto\@#{$breakpoint}  { margin-left: auto !important; }
         .margin-left-0\@#{$breakpoint}     { margin-left: 0; }
 
         .margin-x-xxxxs\@#{$breakpoint} { margin-left: var(--space-xxxxs); margin-right: var(--space-xxxxs); }

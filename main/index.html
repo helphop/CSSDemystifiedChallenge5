@@ -16,13 +16,13 @@
           <img  src="assets/images/logo-small.svg" alt="KP Logo">
         </picture>
       </div>
-      <form action="search" method="post" class="flex justify-between round-border padding-xxs">
-        <input class="padding-left-sm display@md block@md" type="text" name="search" id="search" placeholder="What do you want to learn?">
+      <form action="search" method="post" class="flex justify-between | round-border padding-xxs">
+        <input class="display@md block@md | padding-left-sm " type="text" name="search" id="search" placeholder="What do you want to learn?">
         <button type="submit" class="btn--submit"><img src="assets/images/search.svg" alt="magnifying glass"></button>
       </form>
       <div class="header__links">
-        <a class="margin-right-xs display@md inline-block@md"  href="sign_in.html">Sign In</a>
-        <a href="get_started" class="btn btn--primary btn--sm">Get Started</a>
+        <a class="display@md inline-block@md | margin-right-xs "  href="sign_in.html">Sign In</a>
+        <a href="get_started" class="btn | btn--primary btn--sm">Get Started</a>
       </div>
     </div>
   </header>
@@ -30,21 +30,24 @@
     <div class="hero">
       <div class="container">
          <div class="aspect-ratio">
-          <img class="hero__img round-border shadow-xl" src="assets/images/yarn.png" alt="wool yarn and knitting needles">
+          <img class="hero__img | round-border shadow-xl" src="assets/images/yarn.png" alt="wool yarn and knitting needles">
         </div>
         <h1>Become a knitting pro</h1>
       </div>
     </div>
 
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="current"><a href="all_courses">All Courses</a></li>
-      <li><a href="beginner.html">Beginner</a></li>
-      <li><a href="intermediate.html">Intermediate</a></li>
-      <li><a href="expert.html">Expert</a></li>
-      <li><a href="grandmother.html">Grandmother</a></li>
-      <li><a href="subscribe.html">Subscribe</a></li>
-    </ul>
+  <nav class="nav | padding-y-xl">
+    <div class="container">
+      <ul class="nav__list | flex gap-x-md | ws-nowrap grayline-bottom">
+        <li class="current grayline-bottom"><a href="all_courses">All Courses</a></li>
+        <li class="grayline-bottom"><a href="beginner.html">Beginner</a></li>
+        <li class="grayline-bottom"><a href="intermediate.html">Intermediate</a></li>
+        <li class="grayline-bottom"><a href="expert.html">Expert</a></li>
+        <li class="grayline-bottom"><a href="grandmother.html">Grandmother</a></li>
+        <li class="grayline-bottom | margin-left-auto@sm"><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </div>
+
   </nav>
 
   <section class="courses">
