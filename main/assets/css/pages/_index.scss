@@ -70,12 +70,13 @@
     gap: var(--space-xl);
   }
   .card {
+    font-family: var(--font-primary);
     background: var(--color-white-dark);
     border-radius: var(--radius-xxxl);
     padding: var(--space-md);
     display: grid;
     grid-template-rows: 1fr minmax(17rem, 3fr) 1fr;
-    font-family: var(--font-primary);
+
     &__header {
       display: flex;
       justify-content: space-between;
@@ -164,22 +165,17 @@
 
 .footer  {
   .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   row-gap: var(--space-xl);
   column-gap: var(--space-lg);
-
+  align-items: center;
   @include breakpoint(md) {
-
-    flex-direction: row;
+    grid-template-columns: 0.25fr 1fr auto;
   }
-
 }
 
-  &__social {
-    > img {
-      width: 2.75rem;
-      @include breakpoint(md) { width: 1.5rem;}
-    }
+  &__social > img {
+    width: 2.75rem;
+    @include breakpoint(md) { width: 1.5rem;}
   }
 }
