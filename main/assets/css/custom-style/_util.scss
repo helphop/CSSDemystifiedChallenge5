@@ -77,3 +77,20 @@
     bottom: 0;
   }
 }
+
+//This is here as a reminder that we need the 100% width on the first part so it works in a grid or flex container!!
+  // [class*="aspect-ratio"] {
+  //   --aspect-ratio: 16/9;
+  //   position: relative;
+  //   height: 0;
+  //   width: 100%; // <-important for grid containers and flex containers
+  //   padding-bottom: calc(100%/(var(--aspect-ratio)));
+  //   > * {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     object-fit: cover;
+  //   }
+  // }
