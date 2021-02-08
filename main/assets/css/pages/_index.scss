@@ -70,13 +70,12 @@
     gap: var(--space-xl);
   }
   .card {
-    font-family: var(--font-primary);
     background: var(--color-white-dark);
     border-radius: var(--radius-xxxl);
     padding: var(--space-md);
     display: grid;
     grid-template-rows: 1fr minmax(17rem, 3fr) 1fr;
-
+    font-family: var(--font-primary);
     &__header {
       display: flex;
       justify-content: space-between;
