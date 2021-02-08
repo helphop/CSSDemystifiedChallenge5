@@ -174,11 +174,9 @@
 }
 
   &__social {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 2.75rem;
-    gap: var(--space-md);
-    > img {width: 100%;}
-    @include breakpoint(md) { grid-auto-columns: 1.5rem;}
+    > img {
+      width: 2.75rem;
+      @include breakpoint(md) { width: 1.5rem;}
+    }
   }
 }
