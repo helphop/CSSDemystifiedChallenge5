@@ -163,6 +163,7 @@
 }
 
 .footer  {
+  .container {
   display: grid;
   row-gap: var(--space-xl);
   column-gap: var(--space-lg);
@@ -170,29 +171,12 @@
   @include breakpoint(md) {
     grid-template-columns: 0.25fr 1fr auto;
   }
-
-  &__list {
-    justify-self: start;
-    display: grid;
-    row-gap: var(--space-sm);
-    @include breakpoint(md) {
-      grid-auto-flow: column;
-      column-gap: var(--space-lg);
-    }
-  }
+}
 
   &__social {
-    display: grid;
-    grid-auto-flow: column;
-    gap: var(--space-sm);
-    justify-content: start;
-  }
-
-  .social__img {
-    width: 44px;
-    @include breakpoint(md) {
-      width: 24px;
+    > img {
+      width: 2.75rem;
+      @include breakpoint(md) { width: 1.5rem;}
     }
   }
-
 }
