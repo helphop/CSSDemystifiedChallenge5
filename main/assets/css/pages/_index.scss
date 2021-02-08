@@ -144,27 +144,20 @@
   }
 }
 
-//wrapper will be converted to container
 .instructor {
-  &__wrapper {
+  .container {
     border-bottom: 4px solid var(--color-white-dark);
-    padding-top: var(--space-xl);
-    padding-bottom: var(--space-xl);
     display: grid;
     gap: 1rem;
     align-items: center;
-    .aspect-ratio {
-      --aspect-ratio: 1;
-    }
+    .aspect-ratio {--aspect-ratio: 1;}
     @include breakpoint(md) {
-      grid-template-columns: .75fr 1fr;
-      column-gap: 120px;
-      .aspect-ratio {
-        --aspect-ratio: 0.8525;
-      }
-      .instructor__content {
-        max-width: 340px;
-      }
+      grid-template-columns: repeat(2, 21.25rem);
+      column-gap: var(--space-xxl);
+      .aspect-ratio { --aspect-ratio: 340/400;}
+    }
+    @include breakpoint(lg) {
+      grid-template-columns: 34rem 22rem;
     }
   }
 }
