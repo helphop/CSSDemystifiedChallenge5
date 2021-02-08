@@ -80,7 +80,7 @@ body > * {
 
 .container {
   max-width: var(--max-width-lg);
-  @include breakpoint(md) {
+  @include breakpoint(sm) {
     --component-padding: var(--space-xl);
   }
 }
