@@ -164,13 +164,16 @@
 
 .footer  {
   .container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   row-gap: var(--space-xl);
   column-gap: var(--space-lg);
-  align-items: center;
+  // align-items: center;
   @include breakpoint(md) {
-    grid-template-columns: 0.25fr 1fr auto;
+    // grid-template-columns: 0.25fr 1fr auto;
+    flex-direction: row;
   }
+
 }
 
   &__social {
