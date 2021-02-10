@@ -63,7 +63,6 @@
     --aspect-ratio: 16/9;
     position: relative;
     height: 0;
-    width: 100%; //important for grid items
     padding-bottom: calc(100%/(var(--aspect-ratio)));
     > * {
       position: absolute;

@@ -116,6 +116,7 @@
     justify-content: center;
     place-items: center;
     .aspect-ratio {
+      width: 100%;
       --aspect-ratio: 1;
     }
     @include breakpoint(md) {
